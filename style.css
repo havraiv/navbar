@@ -1,8 +1,13 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: sans-serif;
+
 }
 
 
@@ -23,4 +28,41 @@ a:hover {
 	color: #3498db;
 }
 
-/* ---------------------------------------------------- */
+/* ---------------------------------------------------- 
+Odkazy v seznamu zabírají celou výšku rodiče a jsou vertikálně vycentrované*/
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	padding: 10px 20px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar {
+	display: flex;
+	align-items: stretch;
+}
+
+li {
+	margin: 1px;
+	padding: 0;
+	display: flex;
+
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0px;
+}
+
+a {
+	display: flex;
+	align-items: center;
+}
